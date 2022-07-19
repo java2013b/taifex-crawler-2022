@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /home/asoul/taifex-crawler/data
 a=$(date +"%Y_%m_%d")
-wget https://www.taifex.com.tw/DailyDownload/DailyDownloadCSV/Daily_$a.zip
+wget https://www.taifex.com.tw/file/taifex/Dailydownload/Dailydownload/Daily_$a.zip
 cd ..
 git add .
 git commit -m "daily update"
