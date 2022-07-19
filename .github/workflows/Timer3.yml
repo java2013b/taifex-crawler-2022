@@ -1,0 +1,24 @@
+## 利用GitHub Actions 定時執行 ##
+
+name: Timer
+
+# 兩種觸發方式：一、push代碼，二、每天國際標準時間24點（台北時間+8即早上8點）執行
+#on:
+#  push:
+#  schedule:
+#    - cron: '0 17 * * *'
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # 每5分鐘一次，測試用
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest # 運行環境為最新版的Ubuntu
+    steps:
+      - name: 'Checkout codes' # 步驟一，獲取倉庫代碼
+        uses: actions/checkout@v3
+      - name: 'Run crawl.sh' # 步驟二，執行sh命令文件
+        run: bash crawl.sh # 運行目錄是倉庫根目錄
+
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule
