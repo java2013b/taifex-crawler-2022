@@ -1,6 +1,6 @@
 ## 利用GitHub Actions 定時執行 ##
 
-name: Timer
+name: Timer3
 
 # 兩種觸發方式：一、push代碼，二、每天國際標準時間24點（台北時間+8即早上8點）執行
 #on:
