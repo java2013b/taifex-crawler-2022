@@ -19,6 +19,6 @@ jobs:
       - name: 'Checkout codes' # 步驟一，獲取倉庫代碼
         uses: actions/checkout@v3
       - name: 'Run crawl.sh' # 步驟二，執行sh命令文件
-        run: npm install; npm run crawl # 運行目錄是倉庫根目錄
+        run: crawl # 運行目錄是倉庫根目錄
 
 # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule
