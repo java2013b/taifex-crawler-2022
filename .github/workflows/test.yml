@@ -1,0 +1,20 @@
+## 利用GitHub Actions 定時執行 ##
+
+name: Test
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # 每5分鐘一次，測試用
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout codes'
+      uses: actions/checkout@v3
+    - name: mkdir cd
+      run:
+        pwd
+        mkdir test
+        cd test
+        pwd
