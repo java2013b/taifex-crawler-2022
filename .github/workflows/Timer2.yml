@@ -6,7 +6,7 @@ name: Timer
 #on:
 #  push:
 #  schedule:
-#    - cron: '0 17 * * *'
+#    - cron: '30 15 * * *'
 
 on:
   schedule:
