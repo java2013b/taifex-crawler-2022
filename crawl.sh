@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/runner/work/taifex-crawler-2022/data
+#cd /home/runner/work/taifex-crawler-2022/data
 a=$(date +"%Y_%m_%d")
 wget https://www.taifex.com.tw/file/taifex/Dailydownload/Dailydownload/Daily_$a.zip
 cd ..
