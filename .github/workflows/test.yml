@@ -13,7 +13,7 @@ jobs:
     - name: 'Checkout codes'
       uses: actions/checkout@v3
     - name: mkdir cd
-      run:
+      run: |
         pwd
         mkdir test
         cd test
