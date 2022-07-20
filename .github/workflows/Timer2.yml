@@ -11,6 +11,10 @@ name: Timer
 on:
   schedule:
     - cron: '*/5 * * * *' # 每5分鐘一次，測試用
+    
+defaults:
+ run:
+  working-directory: data
 
 jobs:
   bot:
