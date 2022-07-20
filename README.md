@@ -1,2 +1,2 @@
 # taifex-crawler
-update taifex data everday 1700
+update taifex data everday 1530
