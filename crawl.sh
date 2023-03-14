@@ -1,7 +1,5 @@
 #!/bin/bash
 #cd /home/runner/work/taifex-crawler-2022/data
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
 a=$(date +"%Y_%m_%d")
 wget https://www.taifex.com.tw/file/taifex/Dailydownload/Dailydownload/Daily_$a.zip
 cd ..
