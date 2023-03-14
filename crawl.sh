@@ -4,6 +4,8 @@ a=$(date +"%Y_%m_%d")
 wget https://www.taifex.com.tw/file/taifex/Dailydownload/Dailydownload/Daily_$a.zip
 cd ..
 git add .
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
 git commit -m "daily update"
 git push
 git fetch --depth=1
