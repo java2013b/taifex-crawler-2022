@@ -1,1 +1,1 @@
-find -type f -name 'Daily*' -size -1000c -exec rm -rf {} \;
+find -type f -name 'Daily*' -size -1000c -exec mv {}  junk/ \;
